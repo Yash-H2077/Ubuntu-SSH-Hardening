@@ -91,3 +91,11 @@ tcpdump -i any port 22 -w after.pcap
  ```bash
  sudo ufw status verbose
  ```
+
+## Notes
+ - Be careful while editing the config files and edit with precision
+ - Make sure to restart the services after editing them
+ - Name the .pcap files and screenshots taken to avoid 
+
+## Screenshots 
+Refer to the above screenshots for better explanation and understanding 
