@@ -35,8 +35,8 @@ CMD ["/usr/sbin/sshd", "-D"]
 ##### this will create a docker file and preset rules and values
 ### 2. Build and Run the Container
 ```bash
-ssh-keygen -t rsa -b 4096 -f ~/.ssh/id_rsa
-ssh-copy-id -p 2222 user@localhost
+docker build -t ubuntu-ssh-hardened .
+docker run -d --name sshlab -p 2222:22 ubuntu-ssh-hardened
 ```
 ## Methodology:
 ### Step 1:Update /etc/ssh_config and paste the following  
